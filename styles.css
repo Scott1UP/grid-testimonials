@@ -110,6 +110,7 @@ body {
     color: var(--white);
     text-wrap: balance;
     z-index: 1;
+    font-kerning: none;
 }
 
 .review-heading.dark {
@@ -129,5 +130,42 @@ body {
 
 /* Desktop styles */
 @media screen and (min-width: 720px) {
-    
+    .grid {
+        max-width: 70rem;
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        gap: 1.7rem;
+    }
+
+    .card.daniel {
+        order: 1;
+        grid-column: span 2;
+    }
+
+    .quotation {
+        top: .1rem;
+        right: 5rem;
+        z-index: 0;
+    }
+
+    .card.jonathan {
+        order: 2;
+    }
+
+    .card.jeanette {
+        order: 4;
+    }
+
+    .card.patrick {
+        grid-column: span 2;
+        order: 5;
+    }
+
+    .card.kira {
+        grid-row: span 2;
+        order: 3;
+    }
+
+    .review-heading {
+        text-wrap: wrap;
+    }
 }
