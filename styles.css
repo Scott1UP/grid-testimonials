@@ -71,6 +71,10 @@ body {
     border: 1px solid hsla(0, 0%, 81%, 0.50);
 }
 
+.purp-border {
+    border: 1px solid var(--violet);
+}
+
 .student-details {
     display: flex;
     flex-direction: row;
