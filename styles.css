@@ -130,6 +130,19 @@ body {
 
 /* Desktop styles */
 @media screen and (min-width: 720px) {
+    body {  
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+        min-height: 100vh;
+        min-height: 100svh;
+    }
+
+    main {
+        width: 100vw;
+        max-width: 72.1rem; /* Adjust as needed */
+    }
+
     .grid {
         max-width: 70rem;
         grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -167,5 +180,17 @@ body {
 
     .review-heading {
         text-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 871px) {
+    .card.jonathan {
+        grid-row: span 2;
+    }
+}
+
+@media screen and (min-width: 1154px) {
+    .card.jonathan {
+        grid-row: span 1;
     }
 }
